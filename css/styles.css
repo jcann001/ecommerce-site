@@ -4,11 +4,15 @@ body {
   
 }
 
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90%;
+}
+
 .navbar {
   background-color: whitesmoke;
-  /* background-image: url; */
-
 }
+
 
 #slide1 {
   background-color: whitesmoke;
@@ -65,10 +69,10 @@ body {
 
 .centered {
   font-family: 'Permanent Marker', cursive;
-  position: absolute;
+  position: absolute !important;
   top: 50%;
   left: 50%;
-  font-size: 300%;
+  font-size: 400%;
   transform: translate(-50%, -50%);
   color: white;
 }
