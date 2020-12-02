@@ -1,0 +1,83 @@
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: whitesmoke;
+  
+}
+
+.navbar {
+  background-color: whitesmoke;
+  /* background-image: url; */
+
+}
+
+#slide1 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+#slide2 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+#slide3 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+
+.card {
+  position: relative;
+  justify-content: center;
+  width: 18%;
+  margin: 3%;
+  text-align: center;
+  height: 15%;
+  border-style: solid;
+  border-color: lightgray;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+.row {
+  justify-content: center;
+}
+
+#newsletter {
+  padding: 50px;
+  justify-content: center;
+}
+
+#inputemail {
+  padding-right: 200px;
+}
+
+.centered {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 300%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.btn-link {
+  color: black;
+}
+
+.site-footer {
+  background-color: lightgray;
+  padding: 50px;
+}
