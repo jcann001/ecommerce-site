@@ -75,6 +75,7 @@ p {
   font-size: 400%;
   transform: translate(-50%, -50%);
   color: white;
+  text-align: center;
 }
 
 .btn-link {
