@@ -13,35 +13,55 @@ h4 {
   color: black;
 }
 
+li:hover {
+  color: gray;
+}
+
 a:hover {
   color: black;
+}
+
+#registerLink:hover,
+#loginLink:hover {
+  color: gray;
+  cursor: pointer;
 }
 
 .navbar {
   background-color: whitesmoke;
 }
 
-#searchBar{
-  padding: 3px;
-  padding-left: 15px;
+.has-search .form-control {
   border: solid 1px lightgray;
   border-radius: 20px;
-  margin-right: 10px;
-  margin-top: 8px;
-  font-size: 17px;
-
+  padding: 2px;
+  padding-left: 40px;
+  margin-right: 5px;
+  margin-top: -20px;
+  font-size: 18px;
+  float: left;
 }
 
-.fa-shopping-cart{
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  margin-top: -22px;
+  margin-left: 7px;
+  width: 1.375rem;
+  line-height: 2.375rem;
+  color: gray;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.fa-shopping-cart {
   margin-right: 10px;
   margin-top: 15px;
+  cursor: pointer;
 }
-
-.fa-search{
-  margin-right: 10px;
-  margin-top: 15px;
-}
-
 
 #slide1 {
   background-color: whitesmoke;
