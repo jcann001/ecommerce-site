@@ -63,6 +63,12 @@ a:hover {
   cursor: pointer;
 }
 
+#subtitle{
+  text-align: center;
+  font-size: 120px;
+  position: relative;
+}
+
 #slide1 {
   background-color: whitesmoke;
   border-style: solid;
@@ -109,6 +115,11 @@ a:hover {
   justify-content: center;
 }
 
+.price{
+  font-family: 'Montserrat', sans-serif;
+  /* color: darkgoldenrod; */
+}
+
 #newsletter {
   padding: 50px;
   justify-content: center;
@@ -137,3 +148,4 @@ a:hover {
   background-color: lightgray;
   padding: 50px;
 }
+
