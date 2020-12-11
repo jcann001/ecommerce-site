@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  
+
   <title>Green </title>
 
 </head>
@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav justify-content-end" id="accountLinks">
           <li class="nav-item">
-            <i class="fa fa-shopping-cart"></i>
+            <a class=" fa fa-shopping-cart" data-toggle="modal" data-target="#modalCart"></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" id="registerLink" data-toggle="modal" data-target="#registerModal">Register</a>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="form-row">
                   <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                  <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>
                 </div>
               </form>
             </div>
@@ -137,10 +137,64 @@
                 </div>
                 <div class="form-row">
                   <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                  <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>
                 </div>
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">My cart</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body">
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product name</th>
+                  <th>Price</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Venus Fly Trap</td>
+                  <td>$9.99</td>
+                  <td><a><i class="fa fa-times"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Lavender</td>
+                  <td>$9.99</td>
+                  <td><a><i class="fa fa-times"></i></a></td>
+                </tr>
+                <tr class="total">
+                  <th scope="row"></th>
+                  <td>Total</td>
+                  <td>$19.98</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <!--Footer-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="checkout.html" class="btn btn-success">Checkout</a>
           </div>
         </div>
       </div>
@@ -156,9 +210,11 @@
         <a href="">
           <h4 class="card-title">Christmas Cactus</h4>
         </a>
-        <p class="card-text d-none d-sm-block">With proper care, the bright pink blooms of a Christmas cactus will return year after year during the holiday season.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">With proper care, the bright pink blooms of a Christmas cactus will
+          return year after year during the holiday season.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
       </div>
-      
+
     </div>
 
 
@@ -168,7 +224,9 @@
         <a href="">
           <h4 class="card-title">Barrel Cactus</h4>
         </a>
-        <p class="card-text d-none d-sm-block">Needs plenty of sun and not much water. A barrel cactus can thrive with watering as infrequently as once every two to three months.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">Needs plenty of sun and not much water. A barrel cactus can thrive with
+          watering as infrequently as once every two to three months.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
 
       </div>
     </div>
@@ -180,7 +238,9 @@
         <a href="">
           <h4 class="card-title">Fairy Castle</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The varied stems resemble the turrets of a castle, making it the perfect addition to any whimsical garden. This slow-growing cactus can reach up to 6 feet in height.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">The varied stems resemble the turrets of a castle, making it the perfect
+          addition to any whimsical garden. This slow-growing cactus can reach up to 6 feet in height.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
       </div>
     </div>
 
@@ -194,9 +254,10 @@
         <a href="">
           <h4 class="card-title">Star Cactus</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The star cactus is a small plant, making it ideal for an indoor succulent garden. A yellow or white bloom is the show-stopper on this petite cactus. </p>
-          <h6 class="price">$9.99</h6>
-          <button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">The star cactus is a small plant, making it ideal for an indoor succulent
+          garden. A yellow or white bloom is the show-stopper on this petite cactus. </p>
+        <h6 class="price">$9.99</h6>
+        <button class="btn btn-success">Add to Cart</button>
 
       </div>
     </div>
@@ -208,9 +269,11 @@
         <a href="">
           <h4 class="card-title">Feather Cactus</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The white "feathers" on this cactus look fluffy and soft, but they actually act as camouflage for the sharp spines that cover the surface.
+        <p class="card-text d-none d-sm-block">The white "feathers" on this cactus look fluffy and soft, but they
+          actually act as camouflage for the sharp spines that cover the surface.
 
-        </p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        </p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
 
       </div>
     </div>
@@ -222,7 +285,9 @@
         <a href="">
           <h4 class="card-title">Bunny Ear Cactus</h4>
         </a>
-        <p class="card-text d-none d-sm-block">This plant does not have spines like a traditional cactus, but that doesn't mean it's cuddly.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">This plant does not have spines like a traditional cactus, but that
+          doesn't mean it's cuddly.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
       </div>
     </div>
 

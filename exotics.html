@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  
+
   <title>Green </title>
 
 </head>
@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav justify-content-end" id="accountLinks">
           <li class="nav-item">
-            <i class="fa fa-shopping-cart"></i>
+            <a class=" fa fa-shopping-cart" data-toggle="modal" data-target="#modalCart"></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" id="registerLink" data-toggle="modal" data-target="#registerModal">Register</a>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="form-row">
                   <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                  <button type="submit" class="btn btn-success btn-sm ml-1">Sign Up</button>
                 </div>
               </form>
             </div>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="form-row">
                   <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                  <button type="submit" class="btn btn-success btn-sm ml-1">Sign in</button>
                 </div>
               </form>
             </div>
@@ -145,7 +145,64 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">My cart</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body">
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product name</th>
+                  <th>Price</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Venus Fly Trap</td>
+                  <td>$9.99</td>
+                  <td><a><i class="fa fa-times"></i></a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Lavender</td>
+                  <td>$9.99</td>
+                  <td><a><i class="fa fa-times"></i></a></td>
+                </tr>
+                <tr class="total">
+                  <th scope="row"></th>
+                  <td>Total</td>
+                  <td>$19.98</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <!--Footer-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="checkout.html" class="btn btn-success">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
 
   <h1 id="subtitle">Exotics</h1>
 
@@ -156,9 +213,11 @@
         <a href="">
           <h4 class="card-title">Pitcher Plant</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The narrow rim of the tall, eggplant-shaped pitcher is coated in a slippery substance, which makes the prey easily slip into it and never get out. </p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">The narrow rim of the tall, eggplant-shaped pitcher is coated in a
+          slippery substance, which makes the prey easily slip into it and never get out. </p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
       </div>
-      
+
     </div>
 
 
@@ -168,7 +227,9 @@
         <a href="">
           <h4 class="card-title">Corpse Flower</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The strangest feature is by far the smell of the flower, which has been described as “rotten flesh” or “a dead squirrel with a hint of old socks”.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">The strangest feature is by far the smell of the flower, which has been
+          described as “rotten flesh” or “a dead squirrel with a hint of old socks”.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
 
       </div>
     </div>
@@ -180,7 +241,9 @@
         <a href="">
           <h4 class="card-title">Whistling Thorn</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The plant is often cultivated in botanical gardens, with crowds of people arriving to watch and smell the rapid blooming process of the flower.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">The plant is often cultivated in botanical gardens, with crowds of people
+          arriving to watch and smell the rapid blooming process of the flower.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
       </div>
     </div>
 
@@ -194,9 +257,11 @@
         <a href="">
           <h4 class="card-title">Sensitive Plant</h4>
         </a>
-        <p class="card-text d-none d-sm-block">The Sensitive Plant is among the very few plant species in the world capable of rapid movement.It is native to South and Central America, but because of its ability to move it became widespread all over the world.</p>
-          <h6 class="price">$9.99</h6>
-          <button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">The Sensitive Plant is among the very few plant species in the world
+          capable of rapid movement.It is native to South and Central America, but because of its ability to move it
+          became widespread all over the world.</p>
+        <h6 class="price">$9.99</h6>
+        <button class="btn btn-success">Add to Cart</button>
 
       </div>
     </div>
@@ -208,7 +273,10 @@
         <a href="">
           <h4 class="card-title">Queen Victoria’s Water Lily</h4>
         </a>
-        <p class="card-text d-none d-sm-block">This pan-like shape inspired its common name, the water platter. The bigger leaves are quite strong and sturdy, too, so much so that the larger leaves can support the weight of a human.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">This pan-like shape inspired its common name, the water platter. The
+          bigger leaves are quite strong and sturdy, too, so much so that the larger leaves can support the weight of a
+          human.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
 
       </div>
     </div>
@@ -220,7 +288,9 @@
         <a href="">
           <h4 class="card-title">Venus flytrap</h4>
         </a>
-        <p class="card-text d-none d-sm-block">A flowering plant best known for its carnivorous eating habits. The “trap” is made of two hinged lobes at the end of each leaf.</p><h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
+        <p class="card-text d-none d-sm-block">A flowering plant best known for its carnivorous eating habits. The
+          “trap” is made of two hinged lobes at the end of each leaf.</p>
+        <h6 class="price">$9.99</h6><button class="btn btn-success">Add to Cart</button>
       </div>
     </div>
 

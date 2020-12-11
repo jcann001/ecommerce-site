@@ -22,7 +22,8 @@ a:hover {
 }
 
 #registerLink:hover,
-#loginLink:hover {
+#loginLink:hover,
+.fa-shopping-cart:hover {
   color: gray;
   cursor: pointer;
 }
@@ -58,6 +59,7 @@ a:hover {
 }
 
 .fa-shopping-cart {
+  color: black;
   margin-right: 10px;
   margin-top: 15px;
   cursor: pointer;
@@ -144,8 +146,28 @@ a:hover {
   color: black;
 }
 
+/* .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+} */
+
+#checkout{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .site-footer {
   background-color: lightgray;
   padding: 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 
