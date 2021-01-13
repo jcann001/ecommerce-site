@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  background-color: whitesmoke;
+
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90%;
+}
+
+h4 {
+  color: black;
+}
+
+li:hover {
+  color: gray;
+}
+
+a:hover {
+  color: black;
+}
+
+#registerLink:hover,
+#loginLink:hover,
+.fa-shopping-cart:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: whitesmoke;
+}
+
+.has-search .form-control {
+  border: solid 1px lightgray;
+  border-radius: 20px;
+  padding: 2px;
+  padding-left: 40px;
+  margin-right: 5px;
+  margin-top: -20px;
+  font-size: 18px;
+  float: left;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  margin-top: -22px;
+  margin-left: 7px;
+  width: 1.375rem;
+  line-height: 2.375rem;
+  color: gray;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.fa-shopping-cart {
+  color: black;
+  margin-right: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#subtitle{
+  text-align: center;
+  font-size: 120px;
+  position: relative;
+}
+
+#slide1 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+#slide2 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+#slide3 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+
+.card {
+  position: relative;
+  justify-content: center;
+  width: 18%;
+  margin: 3%;
+  text-align: center;
+  height: 15%;
+  border-style: solid;
+  border-color: lightgray;
+  padding: 0 !important;
+}
+
+.card-img-top {
+  height: 300px;
+
+}
+
+.row {
+  justify-content: center;
+}
+
+.price{
+  font-family: 'Montserrat', sans-serif;
+  /* color: darkgoldenrod; */
+}
+
+#newsletter {
+  padding: 50px;
+  justify-content: center;
+}
+
+#inputemail {
+  padding-right: 200px;
+}
+
+.centered {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  font-size: 400%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.btn-link {
+  color: black;
+}
+
+/* .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+} */
+
+#checkout{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.site-footer {
+  background-color: lightgray;
+  padding: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
