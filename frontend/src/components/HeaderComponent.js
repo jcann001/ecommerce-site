@@ -49,8 +49,8 @@ class Header extends Component {
     <React.Fragment>
       <div className="Menu">
       <Nav className="navbar navbar-expand navbar-light">
-      <a className="navbar-brand" href="index.html"><img src="/img/leaficon.jpg" style={{width: '40px'}} alt=""/> </a>
-      <a className="navbar-brand" href="index.html">GreenLeaf </a>
+      <a className="navbar-brand" href="/"><img src="/img/leaficon.jpg" style={{width: '40px'}} alt=""/> </a>
+      <a className="navbar-brand" href="/">GreenLeaf </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
