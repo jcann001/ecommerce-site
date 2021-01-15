@@ -8,7 +8,6 @@ body {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 90%;
 }
 
@@ -80,22 +79,7 @@ a:hover {
   border-color: lightgray;
   width: 600px;
   height: 600px;
-}
-
-#slide2 {
-  background-color: whitesmoke;
-  border-style: solid;
-  border-color: lightgray;
-  width: 600px;
-  height: 600px;
-}
-
-#slide3 {
-  background-color: whitesmoke;
-  border-style: solid;
-  border-color: lightgray;
-  width: 600px;
-  height: 600px;
+  font-family: 'Permanent Marker', cursive !important;
 }
 
 
@@ -135,12 +119,10 @@ a:hover {
 }
 
 .centered {
-  font-family: 'Permanent Marker', cursive;
-  position: absolute !important;
-  top: 50%;
-  left: 50%;
   font-size: 400%;
-  transform: translate(-50%, -50%);
+  font-family: 'Permanent Marker', cursive !important;
+  position: absolute !important;
+  top: 30%;
   color: white;
   text-align: center;
 }
@@ -173,4 +155,3 @@ a:hover {
   padding: 50px;
   font-family: 'Montserrat', sans-serif;
 }
-
