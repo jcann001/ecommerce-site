@@ -1,6 +1,6 @@
 //holds carousel and main page and newsletter
 import React, { useState } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 import { items } from "../shared/items";
 
 const Promo = (props) => {

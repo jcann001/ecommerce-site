@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
-import { directory } from "../shared/directory";
-import HomeCard from "./HomeCardComponent";
+import { succulent } from "../shared/succulent";
+import SucculentCard from "./succulentComponent";
 
 
-class Directory extends Component {
+class Succulent extends Component {
     constructor(){
         super();
-        this.state = {directory};
+        this.state = {succulent};
     }
 
 
     render(){
-        let homeCards = this.state.directory.map(type => {
+        let succulentCards = this.state.succulent.map(plant => {
             return (
-                <HomeCard type={type} />
+                <SucculentCard plant={plant} />
             );
         })
         return(
             <React.Fragment>
+            <h1 id="subtitle">Succulents</h1>
             <div className="row">
-             {homeCards}
+             {succulentCards}
             </div> 
             </React.Fragment>
         );
@@ -35,4 +36,4 @@ class Directory extends Component {
 
 
   
-export default Directory;
+export default Succulent;
