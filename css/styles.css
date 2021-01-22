@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 body {
   font-family: 'Permanent Marker', cursive;
   background-color: whitesmoke;
-  
-
 
 }
 
 p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 90%;
 }
 
@@ -81,7 +77,22 @@ a:hover {
   border-color: lightgray;
   width: 600px;
   height: 600px;
-  font-family: 'Permanent Marker', cursive !important;
+}
+
+#slide2 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
+}
+
+#slide3 {
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: lightgray;
+  width: 600px;
+  height: 600px;
 }
 
 
@@ -95,10 +106,6 @@ a:hover {
   border-style: solid;
   border-color: lightgray;
   padding: 0 !important;
-}
-
-.card-text {
-  font-family: 'Montserrat', sans-serif;
 }
 
 .card-img-top {
@@ -125,10 +132,12 @@ a:hover {
 }
 
 .centered {
-  font-size: 400%;
-  font-family: 'Permanent Marker', cursive !important;
+  font-family: 'Permanent Marker', cursive;
   position: absolute !important;
-  top: 30%;
+  top: 50%;
+  left: 50%;
+  font-size: 400%;
+  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
 }
@@ -161,3 +170,4 @@ a:hover {
   padding: 50px;
   font-family: 'Montserrat', sans-serif;
 }
+
